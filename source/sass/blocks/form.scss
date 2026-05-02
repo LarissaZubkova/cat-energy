@@ -1,0 +1,15 @@
+@use "../variables" as *;
+
+.form {
+  padding: 20px;
+}
+
+.form__group {
+  margin: 0;
+}
+
+.form__additional {
+  color: $color-black;
+  font-size: 14px;
+  line-height: 16px;
+}

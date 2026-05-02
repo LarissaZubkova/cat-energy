@@ -1,0 +1,27 @@
+@use "./variables.scss";
+@use "./fonts.scss";
+
+// Blocks
+@use "./blocks/button.scss";
+@use "./blocks/card-row.scss";
+@use "./blocks/card.scss";
+@use "./blocks/catalog-additional.scss";
+@use "./blocks/catalog-list.scss";
+@use "./blocks/catalog-sections.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/control.scss";
+@use "./blocks/developer.scss";
+@use "./blocks/example.scss";
+@use "./blocks/field-group.scss";
+@use "./blocks/field.scss";
+@use "./blocks/form.scss";
+@use "./blocks/offer.scss";
+@use "./blocks/page-footer.scss";
+@use "./blocks/page-main.scss";
+@use "./blocks/page.scss";
+@use "./blocks/process.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/show-more.scss";
+@use "./blocks/site-menu.scss";
+@use "./blocks/switcher.scss";
+@use "./blocks/visually-hidden.scss";
