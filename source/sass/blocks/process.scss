@@ -1,0 +1,12 @@
+@use "../variables" as *;
+
+.process {
+  padding: 20px;
+}
+
+.process__list {
+  margin: 0;
+  list-style-type: none;
+
+  color: $color-gray-700;
+}
