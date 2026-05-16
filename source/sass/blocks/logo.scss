@@ -1,0 +1,12 @@
+@use "../variables" as *;
+
+.logo {
+  @media (max-width: $breakpoint-small-down) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo__sign {
+  justify-self: center;
+}
