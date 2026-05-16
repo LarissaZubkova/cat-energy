@@ -6,8 +6,31 @@
   color: $color-white;
   background-color: $color-primary-500;
   background-image: url("../img/backgrounds/promo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    background-color: transparent;
+    background-image: none;
+    text-align: left;
+    color: $color-black;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    background-color: $color-primary-500;
+    background-image: url("../img/backgrounds/promo.jpg");
+    background-size: 720px 694px;
+    background-position: right;
+  }
+}
+
+.promo__container {
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 90px;
+  }
 }
 
 .promo__heading {
@@ -22,3 +45,4 @@
   line-height: 1;
   text-transform: uppercase;
 }
+

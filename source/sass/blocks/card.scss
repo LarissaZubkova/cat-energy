@@ -1,5 +1,11 @@
 @use "../variables" as *;
 
+.card {
+  @media (min-width: $breakpoint-medium) {
+    background-color: $color-gray-50;
+  }
+}
+
 .card__link {
   text-decoration: none;
   color: $color-gray-850;

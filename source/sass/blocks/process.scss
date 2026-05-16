@@ -5,8 +5,26 @@
 }
 
 .process__list {
-  margin: 0;
+  padding: 0;
+
   list-style-type: none;
 
   color: $color-gray-700;
+
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.process__item {
+  @media (max-width: $breakpoint-small-down) {
+    & + & {
+      margin-top: 20px;
+    }
+  }
 }
