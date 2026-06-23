@@ -1,8 +1,26 @@
 @use "../variables" as *;
 
 .developer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   color: $color-gray-700;
 
   text-decoration: none;
   font-size: 16px;
+
+  &:hover {
+    .developer__image {
+      color: $color-primary-500;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .developer__image {
+      color: $color-primary-500;
+    }
+  }
 }
