@@ -5,6 +5,14 @@
   border: none;
 }
 
+.field-group--target {
+  padding: 21px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 25px;
+  }
+}
+
 .field-group__heading {
   font-family: $font-heading;
   font-size: 24px;

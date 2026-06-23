@@ -1,7 +1,11 @@
 @use "../variables" as *;
 
 .catalog-list {
-  padding: 20px 0;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-small-down) {
+    border-bottom: 1px solid $color-gray-100;
+  }
 }
 
 .catalog-list__container {
@@ -19,9 +23,25 @@
 }
 
 .catalog-list__item {
-  & + & {
-    @media (max-width: $breakpoint-small-down) {
-      margin-bottom: 19px;
+  @media (max-width: $breakpoint-small-down) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50vw);
+
+      width: 100vw;
+      height: 1px;
+
+      border-color: $color-gray-100;
     }
+  }
+}
+
+.catalog-list__item--show-more {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 80px;
   }
 }
