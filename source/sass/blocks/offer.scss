@@ -1,13 +1,55 @@
 @use "../variables" as *;
 
 .offer {
-  padding: 40px;
+  padding: 186px 60px 43px;
 
   color: $color-white;
   background-color: $color-primary-500;
-  background-image: url("../img/backgrounds/catbag.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 58px, 50% 50%;
+  background-image:
+    url("../../img/svg/gift.jpg"),
+    url("../../img/backgrounds/catbag-small.png");
 
   font-size: 16px;
   text-align: center;
   line-height: 20px;
+
+  @media (min-resolution: 2dpx) {
+    background-image:
+      url("../../img/svg/gift.jpg"),
+      url("../../img/backgrounds/catbag-small@2x.png");
+  }
+
+  @media ($breakpoint-medium) {
+    padding: 70px 120px 70px 422px;
+    background-position: 77px 50%, 50% 50%;
+    background-image:
+      url("../../img/svg/gift.jpg"),
+      url("../../img/backgrounds/catbag-medium.png");
+
+    @media (min-resolution: 2dpx) {
+      background-image:
+        url("../../img/svg/gift.jpg"),
+        url("../../img/backgrounds/catbag-medium@2x.png");
+    }
+  }
+
+  @media ($breakpoint-large) {
+    padding: 178px 40px 48px;
+    background-position: 50% 50px, 50% 50%;
+    background-image:
+      url("../../img/svg/gift.jpg"),
+      url("../../img/backgrounds/catbag-large.png");
+
+    @media (min-resolution: 2dpx) {
+      background-image:
+        url("../../img/svg/gift.jpg"),
+        url("../../img/backgrounds/catbag-large@2x.png");
+    }
+  }
+}
+
+.offer__text {
+  margin: 0;
 }

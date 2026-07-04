@@ -82,6 +82,8 @@
   }
 
   &::before {
+    content: "";
+    position: absolute;
     left: 0;
     top: 0;
 
@@ -93,7 +95,7 @@
 
     @media (min-width: $breakpoint-medium) {
       top: calc(50% - 100px);
-      right: 62x;
+      right: 62px;
       left: auto;
 
       width: 200px;
