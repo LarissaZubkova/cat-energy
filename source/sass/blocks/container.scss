@@ -9,7 +9,7 @@
     width: 708px;
   }
 
-  @media (mon-width: $breakpoint-large) {
+  @media (min-width: $breakpoint-large) {
     width: 1220px;
   }
 }

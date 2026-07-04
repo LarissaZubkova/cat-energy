@@ -65,6 +65,7 @@
   }
 
   @media (min-width: $breakpoint-large) {
+    margin-bottom: 0;
     margin-left: -40px;
     padding: 0 35px 0 40px;
     grid-column: 1 / -1;

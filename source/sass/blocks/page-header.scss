@@ -12,9 +12,8 @@
     margin: 0 auto;
     padding: 24px 0;
     display: grid;
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 16px;
-    align-items: center;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -24,7 +23,7 @@
 
 .page-header__nav--main {
   @media (min-width: $breakpoint-large) {
-    grid-template-columns: 202px 50%;
+    grid-template-columns: max-content 50%;
     justify-content: space-between;
   }
 }
